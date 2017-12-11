@@ -1,5 +1,7 @@
 # Bull SQLite
-Simple Helper Package for using SQLite3 in Python
+Simple Helper Package for use with SQLite3 in Python. Handles connecting, comitting, and closing so you no longer have to bother; helping you write more concise code.
+
+Basically takes in parameters for a given operation such as selecting, formats the query for you and executes it in only one line.
 
 ## Example usage
 ```python
