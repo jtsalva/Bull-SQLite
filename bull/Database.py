@@ -94,7 +94,7 @@ class Database:
 
         return self.execute(update_query, list(values.values()))
 
-    def insert(self, table_name: str, values: dict) -> sqlite3.Cursor:
+    def insert(self, table_name: str, values: dict) -> list:
         insert_query = 'INSERT INTO {table_name}({field_names}) VALUES({values});'.\
             format(table_name=table_name,
                    field_names=', '.join(values.keys()),
